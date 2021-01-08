@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+<meta charset="UTF-8"/>
+<title>{{ title or 'My Blog' }}</title>
+<link rel="stylesheet" href="/base.css">
+{{ head | safe }}
+</head>
+<body>
+	<nav>
+		<a href="/list.html">Articles</a>
+	</nav>
+	<hr>
+	<main>{{ content | safe }}</main>
+</body>
+</html>
